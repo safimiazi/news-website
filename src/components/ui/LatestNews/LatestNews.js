@@ -25,19 +25,96 @@ const LatestNews = () => {
                 </CardActionArea>
             </Card>
 
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid  className='mt-5' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={6}>
-                    <Item>1</Item>
+                    <Card>
+                        <CardActionArea>
+                            <CardMedia>
+                                <Image src={topNews} alt='top-news'  />
+                            </CardMedia>
+                            <CardContent>
+                                <p className='w-[100px] rounded bg-red-500 p-1 text-white'>Technology</p>
+                                <Typography gutterBottom  component="div">
+                                    Bitcoin climbs as Elon Musk says Likly to accept it Again
+                                </Typography>
+                                <Typography gutterBottom>
+                                    By Mohebulla Miazi - Mar 18 2023
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
                 <Grid item xs={6}>
-                    <Item>2</Item>
+                    <Card>
+                        <CardActionArea>
+                            <CardMedia>
+                                <Image src={topNews} alt='top-news'  />
+                            </CardMedia>
+                            <CardContent>
+                                <p className='w-[100px] rounded bg-red-500 p-1 text-white'>Technology</p>
+                                <Typography gutterBottom  component="div">
+                                    Bitcoin climbs as Elon Musk says Likly to accept it Again
+                                </Typography>
+                                <Typography gutterBottom>
+                                    By Mohebulla Miazi - Mar 18 2023
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
                 <Grid item xs={6}>
-                    <Item>3</Item>
+                    <Card>
+                        <CardActionArea>
+                            <CardMedia>
+                                <Image src={topNews} alt='top-news'  />
+                            </CardMedia>
+                            <CardContent>
+                                <p className='w-[100px] rounded bg-red-500 p-1 text-white'>Technology</p>
+                                <Typography gutterBottom  component="div">
+                                    Bitcoin climbs as Elon Musk says Likly to accept it Again
+                                </Typography>
+                                <Typography gutterBottom>
+                                    By Mohebulla Miazi - Mar 18 2023
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
                 <Grid item xs={6}>
-                    <Item>4</Item>
+                    <Card>
+                        <CardActionArea>
+                            <CardMedia>
+                                <Image src={topNews} alt='top-news'  />
+                            </CardMedia>
+                            <CardContent>
+                                <p className='w-[100px] rounded bg-red-500 p-1 text-white'>Technology</p>
+                                <Typography gutterBottom  component="div">
+                                    Bitcoin climbs as Elon Musk says Likly to accept it Again
+                                </Typography>
+                                <Typography gutterBottom>
+                                    By Mohebulla Miazi - Mar 18 2023
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Grid>
+               
             </Grid>
         </Box>
     );
