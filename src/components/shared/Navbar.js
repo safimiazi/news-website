@@ -42,42 +42,38 @@ const pages = [
 function Navbar() {
 
     return (
-        <AppBar position="static" className='bg-black'>
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Image width={"100"} height={"100"} src={logo} alt="logo" />
-                    <Box className="text-center w-full">
-                        {pages.map((page) => (
-                            <Link key={page} href={page.pathname}>
-                                <Button className='text-white'>
-                                    {page.route}
-                                </Button>
-                            </Link>
-                        ))}
-                    </Box>
-                    <Box>
-                        <Stack direction={"row"} sx={{
-                            "& svg": {
-                                color:"white"
-                            }
-                        }}>
-                            <IconButton>
-                                <FacebookIcon />
-                            </IconButton>
-                            <IconButton>
-                                <FacebookIcon />
-                            </IconButton>
-                            <IconButton>
-                                <FacebookIcon />
-                            </IconButton>
-                            <IconButton>
-                                <FacebookIcon />
-                            </IconButton>
-                        </Stack>
-                    </Box>
-                </Toolbar>
-            </Container>
-        </AppBar>
+        <AppBar position="static" className='bg-black text-white'>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Image width={100} height={100} src={logo} alt="logo" />
+            <Box className="text-center w-full">
+              {pages.map((page) => (
+                <Link key={page.route} href={page.pathname}>
+                  <Button className='text-white'>
+                    {page.route}
+                  </Button>
+                </Link>
+              ))}
+            </Box>
+            <Box>
+              <Stack direction="row" sx={{ "& svg": { color: "white" } }}>
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+              </Stack>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
     );
 }
 export default Navbar;
