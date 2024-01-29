@@ -30,7 +30,7 @@ const Footer = () => {
         },
     ];
     return (
-        <Box className="bg-black px-2 py-2" direction={"row"} sx={{
+        <Box className="bg-black px-2 py-10" direction={"row"} sx={{
             "& svg": {
                 color: "white"
             }
@@ -59,7 +59,7 @@ const Footer = () => {
                         </Link>
                     ))}
                 </Box>
-                <Typography className='text-white text-center'>
+                <Typography variant='body2' className='text-gray-500 text-center'>
                     @2023 the dragon news. design by mohibulla
                 </Typography>
             </Container>
